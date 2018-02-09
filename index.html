@@ -1,0 +1,118 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Shanes Shop</h1>
+		<img src="imgs/basket.png" class="basket">
+	</header>
+	<ul class="main">
+		<li class="item">
+			<img src="imgs/topOrange.png" class="tShirt">
+			<h2>Orange Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+
+		<li class="item">
+			<img src="imgs/topBlue.png" class="tShirt">
+			<h2>Orange Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+
+		<li class="item">
+			<img src="imgs/topGreen.png" class="tShirt">
+			<h2>Green Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+
+		<li class="item">
+			<img src="imgs/topOrange.png" class="tShirt">
+			<h2>Orange Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+
+		<li class="item">
+			<img src="imgs/topGreen.png" class="tShirt">
+			<h2>Green Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+
+		<li class="item">
+			<img src="imgs/topBlue.png" class="tShirt">
+			<h2>Blue Top</h2> 
+			<span>&euro;19.99</span>
+			<div>
+				<label for="size"> Size </label>
+				<select>
+					<option value="small">S</option>
+					<option value="medium">M</option>
+					<option value="large">L</option>
+				</select>
+				<input type="button" Value="+" class="add">
+			</div>
+		</li>
+	</ul>
+	<footer>
+		All payments are made through PayPal
+	</footer>
+	<script   src="http://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
+	<script >
+		$('.add').on("click",function(){
+			$(this).closest("li")
+				.find("img")
+				.clone()
+				.addClass("animate")
+				.appendTo("body");
+			setTimeout(function(){
+			$(".animate").remove();
+			},1000);
+		});
+	</script>
+</body>
+</html>
